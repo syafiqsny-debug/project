@@ -15,7 +15,7 @@ DF.dropna(inplace = True)
 DF.duplicated().sum()
 DF.drop_duplicates(inplace = True)
 DF = DF[DF['year'] >= 2019]
-DF = DF.rename(columns={'model': 'Model','year' : 'Year', 'price':'Price', 'transmission':'Transmission', 'mileage':'Mileage'})
+DF = DF.rename(columns={'model': 'Model','year' : 'Year', 'price':'Price', 'transmission':'Transmission', 'mileage':'Mileage', 'mpg':'MilesperGallon'})
 DF = DF[DF['fuelType']== 'Petrol']
 
 st.write(DF)
