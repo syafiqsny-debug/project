@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-st.title("""Welcome to my Dashboard
-This is my first time using streamlit.""")
+st.image('bmwlogo.png')
+st.title("""Welcome to my Dashboard""")
 
 DF = pd.read_csv('bmw (1).csv')
 st.subheader("Raw Data")
