@@ -33,7 +33,7 @@ DF['MilesperGallon'].plot(kind='hist',
                            edgecolor = 'black',
                     ax=ax)
 
-plt.title('Histogram Plot')
+plt.title('Relation between Miles per Gallon for car and frequency')
 
 plt.xlabel('MilesperGallon')
 plt.ylabel('Frequency')
@@ -54,7 +54,7 @@ DF.plot(kind='scatter',
         ax=ax)
  
 # set the title
-plt.title('ScatterPlot')
+plt.title('Compaarison of model and price')
 
 ax.set_xticklabels(DF['Model'], rotation=45) 
 
