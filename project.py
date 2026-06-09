@@ -45,7 +45,7 @@ plt.xlabel('MilesperGallon')
 plt.ylabel('Frequency')
 st.pyplot(fig)
 
-
+else:
 #Scatter Plot
 st.subheader("""Objective
 Identifying the range of price for each car model.""")
