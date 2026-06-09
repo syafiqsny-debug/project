@@ -21,7 +21,7 @@ DF = DF[DF['fuelType']== 'Petrol']
 st.subheader("Cleaned Data")
 st.write(DF)
 
-selected_option == "Miles per gallon vs frequency":
+
 #Histogram
 st.subheader("""Objective
 Identifying relation between miles per gallon and its frequency.""")
