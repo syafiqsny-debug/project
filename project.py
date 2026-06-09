@@ -23,7 +23,7 @@ st.write(DF)
 
 
 #Histogram
-st.write("""Objective
+st.write("""Objective:
 Identifying relation between miles per gallon and its frequency.""")
 
 
@@ -40,7 +40,7 @@ plt.ylabel('Frequency')
 st.pyplot(fig)
 
 #Scatter Plot
-st.write("""Objective
+st.write("""Objective:
 Identifying the range of price for each car model.""")
 
 fig, ax = plt.subplots(figsize = (8, 6))
