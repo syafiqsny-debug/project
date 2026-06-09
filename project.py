@@ -6,9 +6,13 @@ import plotly.express as px
 st.image('image-5.png')
 st.title("""Welcome to my Dashboard""")
 
+custom_options = {"Raw Data", "Cleaned Data", "Miles per gallon vs frequency", "Model vs price"}
+selected_option = st.selectbox("Choose information", custom_options )
+
 DF = pd.read_csv('bmw (1).csv')
-st.subheader("Raw Data")
-st.write(DF)
+if selected_option == "Raw Data"
+  st.subheader("Raw Data")
+  st.write(DF)
 
 DF.isnull().sum()
 DF.dropna(inplace = True)
