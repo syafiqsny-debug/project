@@ -22,9 +22,11 @@ DF = DF[DF['year'] >= 2019]
 DF = DF.rename(columns={'model': 'Model','year' : 'Year', 'price':'Price', 'transmission':'Transmission', 'mileage':'Mileage', 'mpg':'MilesperGallon'})
 DF = DF[DF['fuelType']== 'Petrol']
 
-st.subheader("Cleaned Data")
-st.write(DF)
+elif selected_option == "Cleaned Data":
+  st.subheader("Cleaned Data")
+  st.write(DF)
 
+elif selected_option == "Miles per gallon vs frequency":
 #Histogram
 st.subheader("""Objective
 Identifying relation between miles per gallon and its frequency.""")
