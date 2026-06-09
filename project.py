@@ -54,7 +54,7 @@ DF.plot(kind='scatter',
         ax=ax)
  
 # set the title
-plt.title('Compaarison of model and price')
+plt.title('Comparison of model and price')
 
 ax.set_xticklabels(DF['Model'], rotation=45) 
 
