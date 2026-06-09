@@ -6,13 +6,11 @@ import plotly.express as px
 st.image('image-5.png')
 st.title("""Welcome to my Dashboard""")
 
-custom_options = {"Raw Data", "Cleaned Data", "Miles per gallon vs frequency", "Model vs price"}
-selected_option = st.selectbox("Choose information", custom_options )
 
 DF = pd.read_csv('bmw (1).csv')
-if selected_option == "Raw Data":
-  st.subheader("Raw Data")
-  st.write(DF)
+selected_option == "Raw Data":
+st.subheader("Raw Data")
+st.write(DF)
 
 DF.isnull().sum()
 DF.dropna(inplace = True)
@@ -21,12 +19,10 @@ DF.drop_duplicates(inplace = True)
 DF = DF[DF['year'] >= 2019]
 DF = DF.rename(columns={'model': 'Model','year' : 'Year', 'price':'Price', 'transmission':'Transmission', 'mileage':'Mileage', 'mpg':'MilesperGallon'})
 DF = DF[DF['fuelType']== 'Petrol']
+st.subheader("Cleaned Data")
+st.write(DF)
 
-elif selected_option == "Cleaned Data":
-  st.subheader("Cleaned Data")
-  st.write(DF)
-
-elif selected_option == "Miles per gallon vs frequency":
+selected_option == "Miles per gallon vs frequency":
 #Histogram
 st.subheader("""Objective
 Identifying relation between miles per gallon and its frequency.""")
@@ -45,7 +41,6 @@ plt.xlabel('MilesperGallon')
 plt.ylabel('Frequency')
 st.pyplot(fig)
 
-else:
 #Scatter Plot
 st.subheader("""Objective
 Identifying the range of price for each car model.""")
