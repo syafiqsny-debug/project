@@ -8,7 +8,6 @@ st.title("""Welcome to my Dashboard""")
 
 
 DF = pd.read_csv('bmw (1).csv')
-selected_option == "Raw Data":
 st.subheader("Raw Data")
 st.write(DF)
 
