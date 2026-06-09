@@ -10,7 +10,7 @@ custom_options = {"Raw Data", "Cleaned Data", "Miles per gallon vs frequency", "
 selected_option = st.selectbox("Choose information", custom_options )
 
 DF = pd.read_csv('bmw (1).csv')
-if selected_option == "Raw Data";
+if selected_option == "Raw Data":
   st.subheader("Raw Data")
   st.write(DF)
 
